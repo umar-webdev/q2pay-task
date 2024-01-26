@@ -59,10 +59,6 @@ const styles = StyleSheet.create({
     backgroundColor: "#ffffff",
     marginTop: 10,
   },
-  separator: {
-    height: 1,
-    backgroundColor: "#CCCCCC",
-  },
 });
 
 export default ProductListScreen;

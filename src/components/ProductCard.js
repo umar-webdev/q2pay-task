@@ -1,3 +1,5 @@
+// ProductCard.js
+
 import React from "react";
 import { View, Text, Image, StyleSheet, TouchableOpacity } from "react-native";
 
@@ -19,11 +21,21 @@ const ProductCard = ({ item, onPress }) => (
 
 const styles = StyleSheet.create({
   container: {
-    paddingLeft: 19,
-    paddingRight: 16,
+    marginHorizontal: 16, // Use marginHorizontal instead of paddingHorizontal
     paddingVertical: 12,
     flexDirection: "row",
     alignItems: "flex-start",
+    backgroundColor: "#fff",
+    marginBottom: 10,
+    borderRadius: 8,
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+    elevation: 5,
   },
   content: {
     marginLeft: 16,
@@ -38,8 +50,8 @@ const styles = StyleSheet.create({
   image: {
     width: 100,
     height: 100,
-    borderRadius: 50,
-    marginLeft: 20,
+    marginLeft:15,
+    borderRadius: 90, // Match the container's border radius
   },
   title: {
     fontSize: 16,
